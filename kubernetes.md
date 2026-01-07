@@ -14,4 +14,5 @@ On the master machines these components are there:
 
   **Scheduler-->** It checks the configuration, which cpu has high memory available, and selects / election of the node. Then it passes the request to controller.
 
-  **Controller-->** Controller will talk to Kubelet and Kubelet will talk to docker, so that container will get created.
+  **Controller-->** Controller will talk to Kubelet and Kubelet will talk to docker, so that container will get created, Here it will be pod (wrapper on top of container). 
+  One POD may have many containers.
