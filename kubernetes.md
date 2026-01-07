@@ -16,3 +16,4 @@ On the master machines these components are there:
 
   **Controller-->** Controller will talk to Kubelet and Kubelet will talk to docker, so that container will get created, Here it will be pod (wrapper on top of container). 
   One POD may have many containers.
+  **Kubelets-->** Kubelets run on the worker nodes.
