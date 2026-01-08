@@ -17,6 +17,8 @@ spec:
     - containerPort: 80
 > kubectl create -f pod.yml
 >
-> kubectl get pods -o widd
+> kubectl get pods -o wide
+>
+> curl <ip-address>
 > 
 > Here -f stands for file.
