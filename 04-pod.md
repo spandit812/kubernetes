@@ -19,6 +19,6 @@ spec:
 >
 > kubectl get pods -o wide
 >
-> curl <ip-address>
+> curl ip-address-of-pod
 > 
 > Here -f stands for file.
