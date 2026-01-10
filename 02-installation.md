@@ -39,3 +39,5 @@ kubelet --version
 kubeadm version
 kubectl version --client
 </pre>
+
+> kubectl get nodes # It shows the nodes 
