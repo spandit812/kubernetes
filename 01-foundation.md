@@ -1,4 +1,16 @@
 
+---
+
+Install the required services:
+
+> sud apt-get install -y kubelet kubeadm kubectl
+
+To check kubelet status:
+
+service kubelet status
+
+---
+
 <pre>
 <img width="370" height="124" alt="image" src="https://github.com/user-attachments/assets/4c8730ff-1973-4c42-842a-b41c07cadba3" /><img width="370" height="124" alt="image" src="https://github.com/user-attachments/assets/8d3b6e58-4d2d-4d0e-a27d-5efab4120be9" />
 
