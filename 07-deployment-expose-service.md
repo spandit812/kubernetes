@@ -1,6 +1,8 @@
 
 ---
-To create service where it points to the created pods by deployment you just need to **--expose**
+To create service where it points to the created pods by deployment you just need to **expose --port=port-number**
+
+**This adds Labels and selector to the service**
 
 > kubectl expose deployment mydeployment --port=80
 >
