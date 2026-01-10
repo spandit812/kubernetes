@@ -11,7 +11,7 @@ To understand the details of the object. like which api version , other fields y
   **Example> kubectl explain pod**
 
   <pre>
-    KIND:       Pod
+KIND:       Pod
 VERSION:    v1
 
 DESCRIPTION:
