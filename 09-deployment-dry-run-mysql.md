@@ -1,6 +1,7 @@
 
 ---
 > kubectl create deployment mysqldepl --image=docker.io/library/mysql:9.5.0 --dry-run=client -o yaml > mydb.yml
+> 
 > vi mydb.yml
 >
 <pre>
