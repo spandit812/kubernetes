@@ -10,6 +10,8 @@ deployment can be created by CLI and YML.
 CLI:
 
 > kubectl create deployment mydeployment --image=docker.io/httpd
+>
+> kubectl get deployments
 > 
 > kubectl scale deployment mydeployment --replica=2
 >
