@@ -46,4 +46,6 @@ spec:
 >  curl ip-address:8080
 
 ---
-kubectl get events 
+> kubectl get events
+> 
+> kubectl delete pod openshift-pod
