@@ -8,11 +8,11 @@
 > 
 > kubectl get services
 >
-> sleep 2
+> sleep 2  # Adding delay for 2 seconds to be service stable 
 > 
 > kubectl describe service mydep2 | grep IP: | awk '{print $2}'
 >
-> sleep 2
+> sleep 2 # Adding delay for 2 seconds to be service stable
 > 
 > curl $(kubectl describe service mydep2 | grep IP: | awk '{print $2}'):**80**
 > 
