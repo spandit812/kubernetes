@@ -7,8 +7,12 @@
 > kubectl expose deployment mydep2 --port=**80**
 > 
 > kubectl get services
+>
+> sleep 2
 > 
 > kubectl describe service mydep2 | grep IP: | awk '{print $2}'
+>
+> sleep 2
 > 
 > curl $(kubectl describe service mydep2 | grep IP: | awk '{print $2}'):**80**
 > 
