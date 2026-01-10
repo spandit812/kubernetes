@@ -8,6 +8,8 @@
 > 
 > kubectl get services
 >
+> kubectl get pods --show-labels
+>
 > sleep 2  # Adding delay for 2 seconds to be service stable 
 > 
 > kubectl describe service mydep2 | grep IP: | awk '{print $2}'
