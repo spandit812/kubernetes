@@ -45,4 +45,5 @@ status: {}
 > kubectl exec -it mysqldepl-6fb6bdc5f4-bkqzf -- bash
 > 
 > mysql -uroot -pmypassword
-> 
+>
+> **kubectl edit deployments mysqldepl**
