@@ -70,5 +70,9 @@ spec:
 > kubectl create -f service.yml
 > 
 > kubectl get svc
+>
+> kubectl get services
 > 
 > curl ip:8085
+> 
+> kubectl describe service my-service
