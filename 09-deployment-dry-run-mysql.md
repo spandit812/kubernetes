@@ -42,7 +42,7 @@ status: {}
 >
 > <img width="391" height="65" alt="image" src="https://github.com/user-attachments/assets/8023aa83-d78f-47ae-b054-ea35ab146b9a" />
 
-> kubectl exec mysqldepl-6fb6bdc5f4-bkqzf  -it -- bash
+> kubectl exec -it mysqldepl-6fb6bdc5f4-bkqzf -- bash
 > 
 > mysql -uroot -pmypassword
 >kubectl exec -it mysqldepl-6fb6bdc5f4-bkqzf -c bash
