@@ -1,4 +1,6 @@
-    ``` bash
+---
+
+    ```bash
     kubectl create deployment mysql --image=mysql:8  
     kubectl edit deployments.apps mysql  
     ```
