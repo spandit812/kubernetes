@@ -42,5 +42,5 @@ env:
 ```bash
 kubectl expose deployment wordpress   --type=NodePort   --port=80
 kubectl get svc wordpress
-curl 172.20.187.113:80
+curl $(kubectl get svc wordpress | grep wordpress |awk '{print $3}')
 ```
