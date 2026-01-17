@@ -10,6 +10,7 @@
      1. When you hit the IP:port (IP with port of any of the node)
      2. It takes you to the service
      3. Service sends the request to the container port
+5. Flow is External--> NODEPORT--> SERVICE->TASK
 
 ```bash
 DEPLOYMENT_NAME=myhttpd7
