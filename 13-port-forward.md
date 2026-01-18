@@ -7,5 +7,7 @@
    kubectl expose deployment httpdtest --port=80
    kubectl port-forward svc/httpdtest 1800:80
    ```
+   <img width="410" height="112" alt="image" src="https://github.com/user-attachments/assets/be90a879-0d93-495d-a8fd-277259368a85" />
+
    when you hit http://localhost:1800 it will work.
    This is used for testing purpose.
