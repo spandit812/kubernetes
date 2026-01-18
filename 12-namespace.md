@@ -10,3 +10,9 @@ kubectl create deployment --image=docker.io/httpd -n tcs # this deployment will 
 kubectl get pods -n tcs
 kubectl get deployment -n tcs
 ```
+
+Get system pods:
+
+```bash
+ kubectl get pods -n kube-system
+```
