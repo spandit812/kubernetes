@@ -8,3 +8,4 @@
    kubectl port-forward svc/httpdtest 1800:80
    ```
    when you hit http://localhost:1800 it will work.
+   This is used for testing purpose.
