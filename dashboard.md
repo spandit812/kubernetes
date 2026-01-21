@@ -13,8 +13,12 @@ kubectl get sa --all-namespaces | grep spandit
 
 ```
 
+Dashboard creation:
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+```
+
+```bash
 kubect get pods -n kubernetes-dashboard
 kubect get svc -n kubernetes-dashboard
 kubectl delete clusterrolebinding kubernetes-dashboard
