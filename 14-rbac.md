@@ -19,6 +19,7 @@
    ```
 --- ---
 **create role and role binding at custom namespace level, not at cluster level:**
+role is namespace level where as cluster role is enter cluster level.
 
    ```bash
    kubectl create namespace spandit
