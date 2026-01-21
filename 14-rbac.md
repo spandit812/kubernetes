@@ -18,7 +18,7 @@
    kubectl get clusterrolebindings -n kubernetes-dashboard | grep myuser
    ```
 --- ---
-**create role and role binding at custom namespace level:**
+**create role and role binding at custom namespace level, not at cluster level:**
 
    ```bash
    kubectl create namespace spandit
