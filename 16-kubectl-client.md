@@ -41,3 +41,14 @@ sudo openssl req -new -key user3.key -out user3.csr # creates csr certificiate
 # Common name wil be user name (certificate name) that is user3.
 sudo openssl x509 -req -in user3.csr -CA /etc/kubernetes/pki/ca.crt -CAkey /etc/kubernetes/pki/ca.key -CAcreateserial -out user3.crt -days 500 #signed the certificate
 ```
+----
+
+**Add the the entry of user into cofig file.**
+```bash
+kubectl config set-credentials user3 --client-certificate=/home/createsslcertificate/user3.csr --client-key=/home/createsslcertificate/user3.key
+
+kubectl config set-context user3-context --cluster=kubernetes --namespace learning --user=user3
+kubectl config get-context
+kubectl config set-context --curent --namespace=learning
+#context is the combination of namespace and user
+```
