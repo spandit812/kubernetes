@@ -24,12 +24,12 @@ kubect get ns
 ```bash
 openssl genrsa -out dev-user.key 2048
 openssl req -new -key dev-user.key -out dev-user.csr -subj "/CN=dev-user"
+# CN must match the user-name that is dev-user
 openssl x509 -req -in dev-user.csr   -CA /etc/kubernetes/pki/ca.crt   -CAkey /etc/kubernetes/pki/ca.key   -CAcreateserial   -out dev-user.crt   -days 365
 ```
 **Create Role:**  
 ```bash
-vi r.yaml
-
+tee role.yaml 0<<EOF
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
@@ -39,12 +39,13 @@ rules:
 - apiGroups: [""]
   resources: ["pods", "services"]
   verbs: ["get", "list", "create", "delete"]
-kubectl create -f r.yaml
+EOF
+
+kubectl create -f role.yaml
 ```
 **Create RoleBinding:**
 ```bash
-vi rolebinding.yaml
-
+tee rolebinding.yaml 0<<EOF
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
@@ -58,7 +59,9 @@ roleRef:
   kind: Role
   name: dev-role
   apiGroup: rbac.authorization.k8s.io
-kubectl create -f rolebindiing.yaml
+EOF
+
+kubectl create -f rolebinding.yaml
 ```
 **Set Credentials and context and set for the current user:**  
 ```bash
