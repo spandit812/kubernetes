@@ -49,7 +49,8 @@ spec:
 > kubectl get events
 > 
 > kubectl delete pod openshift-pod  
-**To delete all pods**  
+**To delete all pods and deployments**  
 ```bash
 kubectl delete pods --all
+kubectl delete deployments --all
 ```
