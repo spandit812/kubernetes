@@ -48,4 +48,8 @@ spec:
 ---
 > kubectl get events
 > 
-> kubectl delete pod openshift-pod
+> kubectl delete pod openshift-pod  
+**To delete all pods**  
+```bash
+kubectl delete pods --all
+```
