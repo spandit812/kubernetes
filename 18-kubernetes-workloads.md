@@ -45,3 +45,4 @@ spec:
 DeamonSet is a pod which runs on every nodes  
 To check each node logs.
 Whenever we create pods with deployment with replicas, it does not give guarantee to create pods on each node.
+It ensures a specific Pod runs on every node (or selected nodes) in the cluster.  
