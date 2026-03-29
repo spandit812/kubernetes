@@ -1,2 +1,1 @@
 # kubernetes  
-Understanding of kebernets
