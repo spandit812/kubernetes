@@ -5,6 +5,8 @@ To create service where it points to the created pods by deployment you just nee
 **This adds Labels and selector to the service**
 
 > kubectl expose deployment mydeployment --port=80
+> OR
+> kubecttl expose deployment mydeployment --name nginx-svc --port=80 --type=NodePort
 >
 > kubect get services
 >
