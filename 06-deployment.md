@@ -19,4 +19,10 @@ CLI:
 > 
 > <img width="329" height="106" alt="image" src="https://github.com/user-attachments/assets/1a148eb9-feb5-4a98-ac04-fb7e406e96f4" />
 
-Once you delete the pod, deployment immediately creates deleted pod.
+Once you delete the pod, deployment immediately creates deleted pod.  
+
+========================================================================================
+
+1. Deployment has multiple deployment strategies
+   1. Rolling Update (Zero Downtime)
+   2. Recreate(Downtime)
