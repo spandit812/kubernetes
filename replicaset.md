@@ -52,7 +52,7 @@ spec:
         image: nginx
 ```
 4. kubectl apply -f replicaset.yml  
-5. Here Desized state and Current state number of pods count will always be same and maintained by replica set.   
+5. Here Desired state and Current state number of pods count will always be same and maintained by replica set.   
 <img width="400" height="75" alt="image" src="https://github.com/user-attachments/assets/b684d035-727b-49a6-b3b4-17f5f4067b2a" />  
 6. There are the pods
    <img width="807" height="117" alt="image" src="https://github.com/user-attachments/assets/2e29f6f8-694b-4afa-84d6-d9f565a06638" />
