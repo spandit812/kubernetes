@@ -1,7 +1,7 @@
 Here I will be discussing about deployment strategy: **RollingUpdate**  
 ```yml
 apiVersion: apps/v1
-kind: deployment
+kind: Deployment
 metadata:
   name: nginx-deployment
   labels:
