@@ -57,7 +57,7 @@ spec:
     spec:
       containers:
       - name: nginx-container
-        image: nginx
+        image: caddy
 ```
 
 
@@ -67,6 +67,10 @@ kubectl apply -f deployment-with-rollout.yml --record=true
 kubectl rollout history deployment nginx-deployment
 kubectl get events
 ```
-
-
+Once I change the image: caddy and run command
+```bash
+kubectl rollout history deployment nginx-deployment
+```
+you will see the revisions  
+<img width="556" height="126" alt="image" src="https://github.com/user-attachments/assets/6daf5260-104d-49ea-b968-615746c8bba2" />
 
