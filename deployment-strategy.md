@@ -1,4 +1,7 @@
 Here I will be discussing about deployment strategy: **RollingUpdate**  
+
+save the yml by name deployment.yml  
+
 ```yml
 apiVersion: apps/v1
 kind: Deployment
@@ -25,5 +28,10 @@ spec:
       containers:
       - name: nginx-container
         image: nginx
+```
+```bash
+kubectl apply -f deployment.yml --record=true
+kubectl rollout history deployment nginx-deployment
+kubectl get events
 ```
 
