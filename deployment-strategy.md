@@ -7,7 +7,12 @@ metadata:
   labels:
     app: nginx-app
 spec:
-  replicas: 3
+  replicas: 5
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 25%
+      maxSurge: 25%
   selector:
     matchLabels:
       app: nginx-pod
@@ -15,9 +20,10 @@ spec:
     metadata:
       name: nginx-pod
       labels:
-        app:nginx-pod
+        app: nginx-pod
     spec:
-    - name: nginx-container
-      image: ngin
+      containers:
+      - name: nginx-container
+        image: nginx
 ```
 
