@@ -29,6 +29,7 @@ spec:
       - name: nginx-container
         image: nginx
 ```
+**--record=true**--> this is used to see the revisions for the rollout happend  
 ```bash
 kubectl apply -f deployment.yml --record=true
 kubectl rollout history deployment nginx-deployment
